@@ -1,0 +1,85 @@
+/* ----- vars ----- */
+:root{
+    --dark: #2b2b2b;
+    --light: #ffffff;
+    --primary: #1b8b83;
+    --secondary: #cfa584;
+    --tertiary: #d9d9d9;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+
+/* ----- header ------ */
+body{
+    margin: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: var(--tertiary);
+  z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header .header_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .header_wrapper .logo{
+    padding-left: 8rem;
+}
+
+header .header_wrapper .nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding-top: 1rem;
+    padding-right: 8rem;
+    list-style: none;
+}
+
+header .header_wrapper .nav ul li a{
+    font-family: "Truculenta", sans-serif;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-style: bold;
+}
+
+header .header_wrapper .nav ul .btn_home{
+    color: var(--primary);
+}
+
+
+/* ----- header jr ----- */
+
+.headerJr{
+    background: var(--secondary);
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+}
+
+.headerJr .headerJr_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerJr .headerJr_wrapper h3 {
+
+}
+
+.headerJr .headerJr_wrapper h2 {
+
+} 
