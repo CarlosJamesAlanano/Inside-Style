@@ -179,6 +179,8 @@ img {
   background-color: var(--primary);
 }
 
+
+
 @media screen and (max-width: 600px) {
   .header{
     position: fixed;
@@ -208,10 +210,29 @@ img {
     transition: all .5s ease;
   }
 
+  .backdrop{
+    display: none;
+    transition: all .5s ease;
+  }
+  
+  .backdrop.open{
+    transition: all .5s ease;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    opacity: 50%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+
   .header .nav.open{
     right: 0;
     transition: all .5s ease;
   }
+
 
 
   .header .toggle_menu.open span:first-child{
