@@ -139,12 +139,13 @@ img {
 
 .header .header_wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .header img{
-    width: 12rem;
+    width: 10rem;
+    left: 2rem;
 }
 
 .header .nav{
@@ -164,6 +165,72 @@ img {
     transition: all .5 ease;
 }
 
+.header .toggle_menu{
+  display: none;
+}
+
+/* mobile view na hahah */
+.header .toggle_menu span{
+  width: 3rem;
+  height: 0.3rem;
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+    transition: all .5s ease;
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    position: fixed;
+    width: 100%;
+    background-color: var(tertiary);
+    z-index: 999;
+  }
+  .header .toggle_menu{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .header .nav{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: var(--tertiary);
+    width: 50%;
+    padding: 3rem;
+    top: 0;
+    margin-top: 9rem;
+    right:-100%;
+    z-index: 99;
+    transition: all .5s ease;
+  }
+
+  .header .nav.open{
+    right: 0;
+    transition: all .5s ease;
+  }
+
+
+  .header .toggle_menu.open span:first-child{
+    transition: all .5s ease;
+    transform: translate(0px, 10px) rotate(225deg);
+  }
+
+  .header .toggle_menu.open span:nth-child(2){
+    transition: all .5s ease;
+    opacity: 0;
+  }
+
+   .header .toggle_menu.open span:last-child{
+    transition: all .5s ease;
+    transform: translate(0px, -12px) rotate(-225deg)
+  }
+}
+/* top */
+
 .top{
     background-color: var(--secondary);
     padding: 1rem 0;
@@ -179,13 +246,15 @@ img {
     max-width: 10rem;
     margin: 0 auto;
     font-weight: bold;
-    font-size: 5rem;
-    line-height: 3.6rem;
+    font-size: 4rem;
+    line-height: 3rem;
 }
+
+/* banner */
 
 .homeBanner{
   padding: 5rem 0;
-  background-color: var(--light);
+  background-color: var(--tertiary);
 }
 
 .homeBanner .homeBanner_wrapper{
@@ -243,6 +312,8 @@ img {
   top: 3rem;
 }
 
+/* about */
+
 .homeAbt{
   padding: 5rem 0;
   background-color: var(--dark);
@@ -282,6 +353,8 @@ img {
   margin-bottom: 2rem;
 }
 
+/* catalog */
+
 .homeCatalog{
   padding: 5rem 0;
   background-color: var(--tertiary);
@@ -312,6 +385,7 @@ img {
   gap: 5rem;
 }
 
+/* calltoaction */
 .cta{ 
   text-align: center;
   padding: 3rem;
@@ -327,6 +401,8 @@ img {
   margin: 1rem 0;
 }
 
+
+/* footer */
 .footer{
   padding: 5rem 0;
   background-color: var(--dark);
