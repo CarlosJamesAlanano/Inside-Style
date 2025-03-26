@@ -121,7 +121,7 @@ img {
 
 /* ----- vars ----- */
 :root{
-    --font: "Truculenta". sans-serif;
+    --font: "Truculenta", sans-serif;
     --dark: #2b2b2b;
     --light: #ffffff;
     --primary: #1b8b83;
@@ -197,11 +197,10 @@ img {
   max-width: 80rem;
 }
 
-
 .homeBanner .homeBanner_txt--title li{
   font-size: 8.5rem;
   font-weight: bold;
-  line-height:  6.5rem;
+  line-height:  7rem;
 }
 
 .homeBanner .homeBanner_txt--title li:first-child{
@@ -243,7 +242,6 @@ img {
   position: relative;
   top: 3rem;
 }
-
 
 .homeAbt{
   padding: 5rem 0;
@@ -355,7 +353,7 @@ img {
   transition: all .5s ease;
 }
 
-/* ---about.html--- */
+/* -------- about.html -------- */
 .aboutBanner{
   padding: 5rem 0;
   color: var(--dark);
@@ -367,14 +365,14 @@ img {
 }
 
 .aboutBanner .banner_img{
-  width: 80%;
+  width: 100%;
 }
 
 .aboutBanner .banner_img h4:before{
   content: "  ";
   background-color: var(--dark);
   height: 0.2rem;
-  width: 19rem;
+  width: 23.8rem;
   display: inline-block;
   position: relative;
   bottom: .5rem;
@@ -424,10 +422,12 @@ img {
   color: var(--primary);
   font-size: 5rem;
   font-weight: bold;
+  padding-left: 2.3rem;
 }
 
 .latest .latest_text p{
   color: var(--light);
+  padding-left: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -442,7 +442,7 @@ img {
   color: var(--dark);
 }
 
-/* internal pointer variabl */
+/* -------- internal pointer variabl -------- */
 .btn{
   background-color: transparent;
   color: transparent;
