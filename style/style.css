@@ -1,5 +1,127 @@
+/* -------------RESETS------------- */
+Resets are used for overwriting default html tag properties/ * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  color: var(--dark);
+  font-family: "Truculenta", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* --------------------------container-------------------------- */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 100%;
+}
+
 /* ----- vars ----- */
 :root{
+    --font: "Truculenta". sans-serif;
     --dark: #2b2b2b;
     --light: #ffffff;
     --primary: #1b8b83;
@@ -7,79 +129,89 @@
     --tertiary: #d9d9d9;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 1.5rem;
+/* ---------- header ---------- */
+.header{
+    padding: .5rem 0;
+    background-color: var(--tertiary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative; 
 }
 
-
-/* ----- header ------ */
-body{
-    margin: 0;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  background: var(--tertiary);
-  z-index: 9999;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-header .header_wrapper{
+.header .header_wrapper{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-
-header .header_wrapper .logo{
-    padding-left: 8rem;
-}
-
-header .header_wrapper .nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 5rem;
-    padding-top: 1rem;
-    padding-right: 8rem;
-    list-style: none;
-}
-
-header .header_wrapper .nav ul li a{
-    font-family: "Truculenta", sans-serif;
-    text-decoration: none;
-    color: var(--dark);
-    font-size: 1.5rem;
-    font-style: bold;
-}
-
-header .header_wrapper .nav ul .btn_home{
-    color: var(--primary);
-}
-
-
-/* ----- header jr ----- */
-
-.headerJr{
-    background: var(--secondary);
-    position: absolute;
-    top: 7rem;
-    width: 100%;
-}
-
-.headerJr .headerJr_wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.headerJr .headerJr_wrapper h3 {
-
+.header img{
+    width: 10rem;
 }
 
-.headerJr .headerJr_wrapper h2 {
+.header .nav{
+    display: flex;
+    gap: 3rem;
+}
 
-} 
+.header .nav li a{
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 1.7rem;
+    transition: all .5s ease;
+}
+
+.header .nav li a:hover, .header .nav li a.active{
+    color: var(--primary);
+    transition: all .5 ease;
+}
+
+.top{
+    background-color: var(--secondary);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.top small{
+    font-weight: 200;
+}
+
+.top h4{
+    max-width: 5rem;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2rem;
+}
+
+.homeBanner{
+  padding: 5rem 0;
+  background-color: var(--light);
+}
+
+.homeBanner .homeBanner_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeBanner .homeBanner_txt{
+  max-width: 80rem;
+}
+
+.homeBanner .homeBanner_txt--title li{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.homeBanner .homeBanner_txt--title li:first-child{
+  color: var(--primary);
+}
+
+.homeBanner .homeBanner_txt--title li:nth-child(2){
+  color: var(--secondary);
+  margin-left: 4rem;
+}
+
+.homeBanner .homeBanner_txt--title li:last-child{
+  color: var(--secondary);
+  font-weight: 200;
+  margin-left: 8rem;
+}

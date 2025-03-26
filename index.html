@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inside Style</title>
+    <link rel="shortcut icon" href="/img/LOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,33 +14,50 @@
 </head>
 <body>
     
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header_wrapper">
                 <div class="logo">
-                    <img src="/img/LOGO.png" alt="">
+                    <img src="/img/LOGO.png" alt="Inside Style Logo">
                 </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="" class="btn_home">HOME</a></li>
-                        <li><a href="" class="btn_about">ABOUT</a></li>
-                        <li><a href="" class="btn_catalog">CATALOG</a></li>
-                        <li><a href="" class="btn_updates">UPDATES</a></li>
-                        <li><a href="" class="btn_contacts">CONTACTS</a></li>
+                    <ul class="nav">
+                        <li><a href="" class="active">HOME</a></li>
+                        <li><a href="" class="">ABOUT</a></li>
+                        <li><a href="" class="">CATALOG</a></li>
+                        <li><a href="" class="">UPDATES</a></li>
+                        <li><a href="" class="">CONTACTS</a></li>
                     </ul>
-                </div>
             </div>
         </div>
     </header>
 
-    <section class="headerJr">
+    <section class="top">
         <div class="container">
-            <div class="headerJr_wrapper">
-                <h3>INTERIOR DE - SIGN</h3>
-                <h2>inside style</h2>
+            <small>INTERIOR DESIGN</small>
+            <h4>inside style</h4>
+        </div>
+    </section>
+
+    <section class="homeBanner">
+        <div class="container">
+            <div class="homeBanner_wrapper">
+                <div class="homeBanner_txt">
+                    <ul class="homeBanner_txt--title">
+                        <li>New</li>
+                        <li>INTERIOR</li>
+                        <li>Collections</li>
+                    </ul>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi architecto sit praesentium eos qui laborum molestiae quisquam vitae accusantium saepe illo, repudiandae expedita sint eveniet! Natus asperiores deleniti, impedit iusto modi numquam placeat. Odit quos tempore quo. Quibusdam, autem saepe.</p>
+                    <a href="" class="btn btn-tertiary">Learn More</a>
+                </div>
+                <div class="homeBanner_img">
+                    <img src="./img/banner-1.png" alt="">
+                    <img src="./img/banner-2.png" alt="">
+                </div>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
