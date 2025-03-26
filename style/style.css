@@ -81,13 +81,13 @@ td {
   list-style: none;
 }
 html {
-  font-size: 70%;
+  font-size: 65%;
   height: 100%;
 }
 body {
   color: var(--dark);
   font-family: "Truculenta", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   overflow-x: hidden;
   line-height: 1.4;
 }
@@ -113,10 +113,10 @@ img {
 
 /* --------------------------container-------------------------- */
 .container {
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 1.5rem;
-  width: 100%;
+  width: 90%;
 }
 
 /* ----- vars ----- */
@@ -131,7 +131,7 @@ img {
 
 /* ---------- header ---------- */
 .header{
-    padding: .5rem 0;
+    padding: 0.8rem 1rem;
     background-color: var(--tertiary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative; 
@@ -139,12 +139,13 @@ img {
 
 .header .header_wrapper{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 }
 
 .header img{
-    width: 10rem;
+    width: 8rem;
     left: 2rem;
 }
 
@@ -156,7 +157,7 @@ img {
 .header .nav li a{
     color: var(--dark);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     transition: all .5s ease;
 }
 
@@ -178,8 +179,6 @@ img {
     transition: all .5s ease;
   background-color: var(--primary);
 }
-
-
 
 @media screen and (max-width: 600px) {
   .header{
@@ -208,6 +207,7 @@ img {
     right:-100%;
     z-index: 99;
     transition: all .5s ease;
+    gap: 2rem;
   }
 
   .backdrop{
@@ -274,13 +274,18 @@ img {
 /* banner */
 
 .homeBanner{
-  padding: 5rem 0;
-  background-color: var(--tertiary);
+  padding: 4rem 0;
+  background-color: var(--light);
 }
 
 .homeBanner .homeBanner_wrapper{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  width: 100%;
 }
 
 .homeBanner .homeBanner_txt{
@@ -288,9 +293,9 @@ img {
 }
 
 .homeBanner .homeBanner_txt--title li{
-  font-size: 8.5rem;
+  font-size: 6.5rem;
   font-weight: bold;
-  line-height:  7rem;
+  line-height:  6rem;
 }
 
 .homeBanner .homeBanner_txt--title li:first-child{
@@ -336,7 +341,7 @@ img {
 /* about */
 
 .homeAbt{
-  padding: 5rem 0;
+  padding: 4rem 0;
   background-color: var(--dark);
   color: var(--light);
 }
@@ -367,7 +372,7 @@ img {
 }
 
 .homeAbt .homeAbt_img img{
-  width: 100rem;
+  width: 80rem;
 }
 
 .homeAbt .homeAbt_txt p{
@@ -391,7 +396,7 @@ img {
   content: "  ";
   background-color: var(--primary);
   height: 0.2rem;
-  width: 109rem;
+  width: 94rem;
   display: inline-block;
   position: relative;
   bottom: 1rem;
@@ -403,10 +408,10 @@ img {
   margin-top: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
-/* calltoaction */
+/* call to action */
 .cta{ 
   text-align: center;
   padding: 3rem;
@@ -432,7 +437,11 @@ img {
 
 .footer .footer_wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15rem;
+  text-align: center;
+  
 }
 
 .footer .footer_wrapper .footer_social{
@@ -458,7 +467,13 @@ img {
 
 .aboutBanner .aboutBanner_wrapper{
   display: flex;
-  gap: 10rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+  width: 100%;
+  gap: 3rem;
 }
 
 .aboutBanner .banner_img{
@@ -469,7 +484,7 @@ img {
   content: "  ";
   background-color: var(--dark);
   height: 0.2rem;
-  width: 23.8rem;
+  width: 22.5rem;
   display: inline-block;
   position: relative;
   bottom: .5rem;
@@ -578,13 +593,13 @@ img {
 .card{
   background-color: var(--light);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  max-width: 35rem;
+  max-width: 30rem;
   border-radius: 1rem;
   transition: all .5s ease;
 }
 
 .card:hover{
-  scale: 1.1;
+  scale: 1.05;
   transition: all .5s ease;
 }
 
@@ -594,14 +609,14 @@ img {
 }
 
 .card .card_details{
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .card .card_details h4{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--secondary);
   font-weight: bold;
 }
 .card .card_details p{
-  margin: 1rem 0;;
+  margin: 0.8rem 0;
 }
