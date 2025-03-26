@@ -81,7 +81,7 @@ td {
   list-style: none;
 }
 html {
-  font-size: 62.5%;
+  font-size: 70%;
   height: 100%;
 }
 body {
@@ -144,7 +144,7 @@ img {
 }
 
 .header img{
-    width: 10rem;
+    width: 12rem;
 }
 
 .header .nav{
@@ -155,7 +155,7 @@ img {
 .header .nav li a{
     color: var(--dark);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2rem;
     transition: all .5s ease;
 }
 
@@ -171,15 +171,16 @@ img {
 }
 
 .top small{
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 2rem;
 }
 
 .top h4{
-    max-width: 5rem;
+    max-width: 10rem;
     margin: 0 auto;
     font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 2rem;
+    font-size: 5rem;
+    line-height: 3.6rem;
 }
 
 .homeBanner{
@@ -196,9 +197,11 @@ img {
   max-width: 80rem;
 }
 
+
 .homeBanner .homeBanner_txt--title li{
-  font-size: 3.5rem;
+  font-size: 8.5rem;
   font-weight: bold;
+  line-height:  6.5rem;
 }
 
 .homeBanner .homeBanner_txt--title li:first-child{
@@ -211,7 +214,212 @@ img {
 }
 
 .homeBanner .homeBanner_txt--title li:last-child{
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 200;
-  margin-left: 8rem;
+}
+
+.homeBanner .homeBanner_txt--title li:last-child::before{
+  content: "  ";
+  background-color: var(--primary);
+  height: 0.2rem;
+  width: 10rem;
+  display: inline-block;
+  position: relative;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.homeBanner .homeBanner_txt p{
+  margin: 2rem 0;
+  max-width: 50rem;
+  text-align: justify;
+}
+
+.homeBanner .homeBanner_img{
+  display: flex;
+  gap: 2rem;
+}
+.homeBanner .homeBanner_img img:last-child{
+  position: relative;
+  top: 3rem;
+}
+
+
+.homeAbt{
+  padding: 5rem 0;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.homeAbt h2{
+  font-size: 4rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.homeAbt h2:before{
+  content: "  ";
+  background-color: var(--primary);
+  height: 0.2rem;
+  width: 94rem;
+  display: inline-block;
+  position: relative;
+  bottom: 1rem;
+  right: .5rem;
+}
+
+.homeAbt .homeAbt_wrapper{
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 5rem;
+  text-align: justify;
+}
+
+.homeAbt .homeAbt_img img{
+  width: 100rem;
+}
+
+.homeAbt .homeAbt_txt p{
+  margin-bottom: 2rem;
+}
+
+.homeCatalog{
+  padding: 5rem 0;
+  background-color: var(--tertiary);
+}
+
+.homeCatalog h2{
+  font-size: 4rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.homeCatalog h2:after{
+  content: "  ";
+  background-color: var(--primary);
+  height: 0.2rem;
+  width: 109rem;
+  display: inline-block;
+  position: relative;
+  bottom: 1rem;
+  left: 0.5rem;
+} 
+
+.homeCatalog .homeCatalog_wrapper{
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.cta{ 
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--primary);
+}
+
+.cta h3{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.cta p{
+  margin: 1rem 0;
+}
+
+.footer{
+  padding: 5rem 0;
+  background-color: var(--dark);
+  color: #ffffff;
+}
+
+.footer .footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer_wrapper .footer_social{
+  display: flex;
+  gap: 2rem;
+}
+
+.footer .footer_wrapper .footer_social li a{
+  color: var(--light);
+  transition: all .5s ease;
+}
+
+.footer .footer_wrapper .footer_social li a:hover{
+  color: var(--primary);
+  transition: all .5s ease;
+}
+
+
+/* internal pointer variabl */
+.btn{
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  transition: all .5s ease;
+
+}
+
+.btn.btn-tertiary{
+  background-color: var(--tertiary);
+  color: var(--dark);
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all .5s ease;
+}
+
+.btn.btn-tertiary:hover{
+  background-color: var(--primary);
+  color: var(--light);
+  transition: all .5s ease;
+}
+
+.btn-nobg{
+  color: var(--primary);
+  transition: all .5s ease;
+}
+
+.btn-nobg:hover{
+  color: var(--secondary);
+  transition: all .5s ease;
+}
+
+.card{
+  background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-width: 35rem;
+  border-radius: 1rem;
+  transition: all .5s ease;
+}
+
+.card:hover{
+  scale: 1.1;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 1rem;  
+}
+
+.card .card_details{
+  padding: 2rem;
+}
+
+.card .card_details h4{
+  font-size: 2.5rem;
+  color: var(--secondary);
+  font-weight: bold;
+}
+.card .card_details p{
+  margin: 1rem 0;;
 }
