@@ -260,7 +260,7 @@ img {
 
   .header .toggle_menu.open span:last-child {
     transition: all 0.5s ease;
-    transform: translate(0px, -10px) rotate(-225deg);
+    transform: translate(0px, -11px) rotate(-225deg);
   }
 }
 
