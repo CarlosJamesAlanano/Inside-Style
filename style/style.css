@@ -581,7 +581,7 @@ img {
 
 /* footer */
 .footer {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background-color: var(--dark);
   color: #ffffff;
 }
@@ -761,6 +761,83 @@ img {
     gap: 1.5rem;
   }
 }
+
+/* catalog page */
+.catalogBanner {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/catalog-banner.png) no-repeat center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.catalogBanner h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.catalogBanner h4 {
+  font-size: 2.5em;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* body00 */
+.packages {
+  padding: 5rem 0;
+}
+
+.packages h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--primary);
+  margin-bottom: 5rem;
+}
+
+.packages .pkg_item .pkg_img img {
+  width: 100%;
+  
+}
+
+
+.packages .pkg_wrapper .pkg_item:nth-child(odd) {
+  display: flex;
+  gap: 18rem;
+  padding-left: 30rem;
+  padding-right: 20rem;
+  margin-bottom: 3rem;
+}
+
+.packages .pkg_wrapper .pkg_item:nth-child(even) {
+  display: flex;
+  gap: 18rem;
+  background-color: var(--tertiary);
+  flex-direction: row-reverse;
+  padding-left: 20rem;
+  margin-bottom: 3rem;
+  padding-right: 30rem;
+}
+
+.packages .pkg_wrapper .pkg_item h3 {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.packages .pkg_wrapper .pkg_item p {
+  max-width: 50rem;
+  text-align: justify;
+}
+
+
 
 /* -------- internal pointer variabl -------- */
 .btn {
