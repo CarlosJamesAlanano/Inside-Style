@@ -792,6 +792,14 @@ img {
   padding: 5rem 0;
 }
 
+.packages .pkg_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
 .packages h2 {
   display: flex;
   justify-content: center;
@@ -800,36 +808,16 @@ img {
   margin-bottom: 5rem;
 }
 
-.packages .pkg_item .pkg_img img {
+.packages .pkg_wrapper .pkg_item img {
   width: 100%;
-  
 }
 
-
-.packages .pkg_wrapper .pkg_item:nth-child(odd) {
-  display: flex;
-  gap: 18rem;
-  padding-left: 30rem;
-  padding-right: 20rem;
-  margin-bottom: 3rem;
-}
-
-.packages .pkg_wrapper .pkg_item:nth-child(even) {
-  display: flex;
-  gap: 18rem;
-  background-color: var(--tertiary);
-  flex-direction: row-reverse;
-  padding-left: 20rem;
-  margin-bottom: 3rem;
-  padding-right: 30rem;
-}
 
 .packages .pkg_wrapper .pkg_item h3 {
   font-size: 4rem;
+  display: flex;
+  justify-content: center;
   color: var(--primary);
-  margin-bottom: 3rem;
-  padding-top: 2rem;
-  text-align: center;
 }
 
 .packages .pkg_wrapper .pkg_item p {
@@ -837,7 +825,174 @@ img {
   text-align: justify;
 }
 
+.packages .pkg_wrapper .pkg_item {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
 
+.packages .pkg_wrapper .pkg_item:nth-child(even) {
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: var(--tertiary);
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+/* updates */
+.updatesBanner {
+  padding: 5rem 0;
+}
+
+.updatesBanner .updatesBannerWrapper {
+  display: flex;
+  max-width: 100%;
+  gap: 10rem;
+}
+
+.updatesBanner .updatesBannerWrapper .updatesBannerText {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  ;
+}
+
+.updatesBanner .updatesBannerWrapper .updatesBannerText h1 {
+  font-size: 7rem;
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 4rem;
+}
+
+.updatesBanner .updatesBannerWrapper .updatesBannerText p {
+  text-align: justify;
+}
+
+/* building designs */
+.buildings {
+  padding: 5rem 0;
+}
+
+.buildings h3 {
+  font-size: 3rem;
+  color: var(--secondary);
+  padding-left: 3rem;
+  font-weight: bold;
+}
+
+.buildings h5 {
+  font-size: 3rem;
+  color: var(--secondary);
+  padding-left: 3rem;
+  position: relative;
+  bottom: 4rem;
+  left: 70.5rem;
+  font-weight: bold;
+}
+
+.buildings .buildings_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.buildings .buildings_wrapper .building_left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.buildings .buildings_wrapper .building_box {
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--tertiary);
+
+}
+
+.buildings .buildings_wrapper .building_box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.buildings .buildings_wrapper .building_box a i {
+  color: var(--dark);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  margin-top: 1rem;
+  font-size: 2.7rem;
+}
+
+.buildings .buildings_wrapper .building_right {
+  display: flex;
+  gap: 20rem;
+  font-size: 2.5rem;
+  line-height: 5rem;
+}
+
+.buildings .buildings_wrapper .building_right ul li{
+  font-weight: bold;
+}
+/* recents */
+
+.recents {
+  padding: 5rem 0;
+}
+
+.recents h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.recents .recents_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.recents .recents_wrapper .affiliates {
+  display: flex;
+  gap: 13.5rem;
+  margin-bottom: 2rem;
+}
+
+.recents .recents_wrapper .affiliates p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.recents .recents_wrapper .affiliate1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.recents .recents_wrapper .affiliate1 i {
+  position: relative;
+  top: .5 rem;
+  font-size: 2rem;
+  align-self: center;
+}
 
 /* -------- internal pointer variabl -------- */
 .btn {
@@ -854,6 +1009,8 @@ img {
   background-color: var(--tertiary);
   color: var(--dark);
   font-weight: bold;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: all 0.5s ease;
 }
