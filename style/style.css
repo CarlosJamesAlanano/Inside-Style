@@ -119,6 +119,10 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width:480px) {
+  * {}
+}
+
 /* --------------------------container-------------------------- */
 .container {
   max-width: 110rem;
@@ -143,6 +147,7 @@ img {
   background-color: var(--tertiary);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
+  overflow-y: hidden;
 }
 
 .header .header_wrapper {
@@ -283,6 +288,7 @@ img {
   font-weight: bold;
   font-size: 4rem;
   line-height: 3rem;
+
 }
 
 @media screen and (max-width: 480px) {
@@ -773,6 +779,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .catalogBanner h1 {
@@ -798,6 +805,7 @@ img {
   justify-content: center;
   max-width: 100%;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .packages h2 {
@@ -849,6 +857,61 @@ img {
   width: 100%;
   align-items: center;
 }
+
+@media screen and (max-width:480px) {
+  html{
+    overflow-x: hidden;
+  }
+
+  .header .logo {
+    max-height: fit-content;
+    overflow: hidden;
+  }
+
+
+    .catalogBanner {
+      padding: 2rem 1rem;
+    }
+
+    .catalogBanner h1 {
+      font-size: 4rem;
+    }
+
+    .catalogBanner h4 {
+      font-size: 2rem;
+      max-width: 90%;
+    }
+
+
+    .packages h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .packages .pkg_wrapper .pkg_item {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .packages .pkg_wrapper .pkg_item h3 {
+      font-size: 2rem;
+    }
+
+    .packages .pkg_wrapper .pkg_item p {
+      max-width: 90%;
+      font-size: 1rem;
+    }
+
+    .packages .pkg_wrapper .pkg_item img {
+      max-width: 80%;
+    }
+
+  }
+
 
 /* updates */
 .updatesBanner {
@@ -947,9 +1010,10 @@ img {
   line-height: 5rem;
 }
 
-.buildings .buildings_wrapper .building_right ul li{
+.buildings .buildings_wrapper .building_right ul li {
   font-weight: bold;
 }
+
 /* recents */
 
 .recents {
@@ -969,6 +1033,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .recents .recents_wrapper .affiliates {
@@ -992,6 +1057,20 @@ img {
   top: .5 rem;
   font-size: 2rem;
   align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+
+  .updatesBanner .updatesBannerWrapper {
+    padding-top: 6rem;
+    max-width: 100rem;
+  }
+
+  .updatesBanner .updatesBannerWrapper img {
+    display: none;
+  }
+
+  .updatesBanner .updatesBannerWrapper .updatesBannerText {}
 }
 
 /* -------- internal pointer variabl -------- */
@@ -1067,6 +1146,10 @@ img {
   .container {
     width: 80%;
     overflow: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .card {
