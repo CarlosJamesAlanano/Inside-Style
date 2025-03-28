@@ -154,6 +154,21 @@ img {
   padding: 0 2rem;
 }
 
+/* .header .header_wrapper.open {
+  background-color: var(--tertiary);
+  border-radius: 2rem;
+  padding: 2rem;
+  position: fixed;
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 9999;
+  left: 0%;
+
+  right: 0;
+  border: 1px solid var(--dark);
+  transition: all .5s ease;
+} */
 .header img {
   width: 10rem;
 }
@@ -196,6 +211,8 @@ img {
     width: 100%;
     background-color: var(tertiary);
     z-index: 999;
+    overflow: hidden;
+
   }
 
   .header img {
@@ -286,6 +303,7 @@ img {
     gap: 0.5rem;
   }
 
+
   .header .nav {
     position: fixed;
     display: flex;
@@ -355,6 +373,7 @@ img {
     position: relative;
     top: 1rem;
   }
+
 
   .header .toggle_menu {
     display: flex;
@@ -440,9 +459,21 @@ img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .top {
-    padding-top: 11.5rem;
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .top {
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top {
+    padding-top: 11rem;
   }
 }
 
@@ -514,7 +545,76 @@ img {
   top: 3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .homeBanner .homeBanner_txt--title li {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:first-child {
+    margin-left: 6rem;
+    color: var(--primary);
+  }
+
+  .homeBanner .homeBanner_txt--title li:nth-child(2) {
+    color: var(--secondary);
+    margin-left: 3rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child {
+    position: relative;
+    right: 4rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child::before {
+    content: "  ";
+    background-color: var(--primary);
+    height: 0.2rem;
+    width: 5rem;
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    right: 0.5rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child::after {
+    content: "  ";
+    background-color: var(--primary);
+    height: 0.2rem;
+    width: 5rem;
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    left: 0.5rem;
+  }
+
+  .homeBanner .homeBanner_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  .homeBanner .homeBanner_img {
+    display: none;
+  }
+
+  .homeBanner .homeBanner_txt p {
+    position: relative;
+    right: 3rem;
+    margin-right: 5rem;
+  }
+
+  .homeBanner .homeBanner_txt a {
+    width: 26rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    right: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .homeBanner .homeBanner_txt--title li {
     font-size: 4.5rem;
     font-weight: bold;
@@ -635,7 +735,33 @@ img {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .homeAbt .homeAbt_img {
+    display: none;
+  }
+
+  .homeAbt h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  .homeAbt h2:before {
+    content: "  ";
+    width: 5rem;
+    bottom: .1rem;
+  }
+
+  .homeAbt h2:after {
+    content: "  ";
+    width: 5rem;
+    bottom: .1rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .homeAbt .homeAbt_img {
     display: none;
   }
@@ -703,14 +829,14 @@ img {
   gap: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .homeCatalog h2:before {
     display: inline-block;
-    width: 13rem;
+    width: 10rem;
   }
 
   .homeCatalog h2:after {
-    width: 13rem;
+    width: 10rem;
   }
 
   .homeCatalog .homeCatalog_wrapper {
@@ -1152,7 +1278,7 @@ img {
 
 .buildings .buildings_wrapper .building_left {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -1501,7 +1627,7 @@ img {
   }
 
   .contacts .contact_box {
-    width:  69.2rem;
+    width: 69.2rem;
     margin-left: 0;
   }
 }
@@ -1572,7 +1698,28 @@ img {
   margin: 0.8rem 0;
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .container {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .card {
+    max-width: 15rem;
+  }
+
+  .latest .latest_wrapper .card .card_details {
+    padding: 0.5rem;
+  }
+
+  .card .card_details {
+    padding: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 600px) and (max-width: 800px) {}
 
