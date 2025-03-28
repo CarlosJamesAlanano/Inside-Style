@@ -154,6 +154,21 @@ img {
   padding: 0 2rem;
 }
 
+.header .header_wrapper.open {
+  background-color: var(--tertiary);
+  border-radius: 2rem;
+  padding: 2rem;
+  position: fixed;
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 9999;
+  left: 0%;
+  right: 0;
+  border: 1px solid var(--dark);
+  transition: all .5s ease;
+}
+
 .header img {
   width: 10rem;
 }
@@ -196,6 +211,8 @@ img {
     width: 100%;
     background-color: var(tertiary);
     z-index: 999;
+    overflow: hidden;
+
   }
 
   .header img {
@@ -225,6 +242,13 @@ img {
     z-index: 99;
     transition: all 0.5s ease;
     gap: 2rem;
+  }
+
+  .header .header_wrapper.open {
+    position: unset;
+    padding: unset;
+    border-radius: unset;
+    border: unset;
   }
 
   .backdrop {
@@ -284,6 +308,13 @@ img {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .header .header_wrapper.open {
+    position: unset;
+    padding: unset;
+    border-radius: unset;
+    border: unset;
   }
 
   .header .nav {
@@ -356,6 +387,7 @@ img {
     top: 1rem;
   }
 
+
   .header .toggle_menu {
     display: flex;
     flex-direction: column;
@@ -377,6 +409,13 @@ img {
     z-index: 99;
     transition: all 0.5s ease;
     gap: 2rem;
+  }
+
+  .header .header_wrapper.open {
+    position: unset;
+    padding: unset;
+    border-radius: unset;
+    border: unset;
   }
 
   .backdrop {
@@ -440,9 +479,21 @@ img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .top {
-    padding-top: 11.5rem;
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .top {
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top {
+    padding-top: 11rem;
   }
 }
 
@@ -1152,7 +1203,7 @@ img {
 
 .buildings .buildings_wrapper .building_left {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(150px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
 
@@ -1501,7 +1552,7 @@ img {
   }
 
   .contacts .contact_box {
-    width:  69.2rem;
+    width: 69.2rem;
     margin-left: 0;
   }
 }
