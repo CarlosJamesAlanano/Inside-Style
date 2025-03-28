@@ -244,13 +244,6 @@ img {
     gap: 2rem;
   }
 
-  .header .header_wrapper.open {
-    position: unset;
-    padding: unset;
-    border-radius: unset;
-    border: unset;
-  }
-
   .backdrop {
     display: none;
     transition: all 0.5s ease;
@@ -310,12 +303,6 @@ img {
     gap: 0.5rem;
   }
 
-  .header .header_wrapper.open {
-    position: unset;
-    padding: unset;
-    border-radius: unset;
-    border: unset;
-  }
 
   .header .nav {
     position: fixed;
@@ -409,13 +396,6 @@ img {
     z-index: 99;
     transition: all 0.5s ease;
     gap: 2rem;
-  }
-
-  .header .header_wrapper.open {
-    position: unset;
-    padding: unset;
-    border-radius: unset;
-    border: unset;
   }
 
   .backdrop {
@@ -573,13 +553,13 @@ img {
   }
 
   .homeBanner .homeBanner_txt--title li:first-child {
-    margin-left: 9rem;
+    margin-left: 6rem;
     color: var(--primary);
   }
 
   .homeBanner .homeBanner_txt--title li:nth-child(2) {
     color: var(--secondary);
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
 
   .homeBanner .homeBanner_txt--title li:last-child {
@@ -591,7 +571,7 @@ img {
     content: "  ";
     background-color: var(--primary);
     height: 0.2rem;
-    width: 8rem;
+    width: 5rem;
     display: inline-block;
     position: relative;
     bottom: 1.5rem;
@@ -602,7 +582,7 @@ img {
     content: "  ";
     background-color: var(--primary);
     height: 0.2rem;
-    width: 8rem;
+    width: 5rem;
     display: inline-block;
     position: relative;
     bottom: 1.5rem;
@@ -626,7 +606,7 @@ img {
   }
 
   .homeBanner .homeBanner_txt a {
-    width: 31rem;
+    width: 26rem;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -764,6 +744,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
   }
 
   .homeAbt h2:before {
@@ -851,11 +832,11 @@ img {
 @media screen and (min-width: 400px) and (max-width: 600px) {
   .homeCatalog h2:before {
     display: inline-block;
-    width: 13rem;
+    width: 10rem;
   }
 
   .homeCatalog h2:after {
-    width: 13rem;
+    width: 10rem;
   }
 
   .homeCatalog .homeCatalog_wrapper {
@@ -1717,7 +1698,28 @@ img {
   margin: 0.8rem 0;
 }
 
-@media screen and (min-width: 400px) and (max-width: 600px) {}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .container {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .card {
+    max-width: 15rem;
+  }
+
+  .latest .latest_wrapper .card .card_details {
+    padding: 0.5rem;
+  }
+
+  .card .card_details {
+    padding: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 600px) and (max-width: 800px) {}
 
