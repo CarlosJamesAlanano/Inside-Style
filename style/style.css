@@ -154,7 +154,7 @@ img {
   padding: 0 2rem;
 }
 
-.header .header_wrapper.open {
+/* .header .header_wrapper.open {
   background-color: var(--tertiary);
   border-radius: 2rem;
   padding: 2rem;
@@ -164,11 +164,11 @@ img {
   margin: 0 auto;
   z-index: 9999;
   left: 0%;
+
   right: 0;
   border: 1px solid var(--dark);
   transition: all .5s ease;
-}
-
+} */
 .header img {
   width: 10rem;
 }
@@ -565,7 +565,76 @@ img {
   top: 3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .homeBanner .homeBanner_txt--title li {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 4rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:first-child {
+    margin-left: 9rem;
+    color: var(--primary);
+  }
+
+  .homeBanner .homeBanner_txt--title li:nth-child(2) {
+    color: var(--secondary);
+    margin-left: 6rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child {
+    position: relative;
+    right: 4rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child::before {
+    content: "  ";
+    background-color: var(--primary);
+    height: 0.2rem;
+    width: 8rem;
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    right: 0.5rem;
+  }
+
+  .homeBanner .homeBanner_txt--title li:last-child::after {
+    content: "  ";
+    background-color: var(--primary);
+    height: 0.2rem;
+    width: 8rem;
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    left: 0.5rem;
+  }
+
+  .homeBanner .homeBanner_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  .homeBanner .homeBanner_img {
+    display: none;
+  }
+
+  .homeBanner .homeBanner_txt p {
+    position: relative;
+    right: 3rem;
+    margin-right: 5rem;
+  }
+
+  .homeBanner .homeBanner_txt a {
+    width: 31rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    right: 5rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .homeBanner .homeBanner_txt--title li {
     font-size: 4.5rem;
     font-weight: bold;
@@ -686,7 +755,32 @@ img {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .homeAbt .homeAbt_img {
+    display: none;
+  }
+
+  .homeAbt h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeAbt h2:before {
+    content: "  ";
+    width: 5rem;
+    bottom: .1rem;
+  }
+
+  .homeAbt h2:after {
+    content: "  ";
+    width: 5rem;
+    bottom: .1rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .homeAbt .homeAbt_img {
     display: none;
   }
@@ -754,7 +848,7 @@ img {
   gap: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
   .homeCatalog h2:before {
     display: inline-block;
     width: 13rem;
