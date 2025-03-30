@@ -1314,6 +1314,7 @@ img {
   padding: 1rem 2rem;
   border-radius: 2rem;
   display: inline-block;
+  max-width: fit-content;
   transition: all 0.5s ease;
   display: flex;
   justify-content: center;
@@ -1409,6 +1410,11 @@ img {
 
 .cta p {
   margin: 1rem 0;
+}
+
+.cta a.btn.btn-tertiary{
+  position: relative;
+  left: 50rem;
 }
 
 /* footer */
