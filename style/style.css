@@ -1,5 +1,6 @@
 /* -------------RESETS------------- */
-Resets are used for overwriting default html tag properties/ * {
+/*Resets are used for overwriting default html tag properties*/ 
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
